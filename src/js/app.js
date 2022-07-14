@@ -4,6 +4,6 @@ export default class Validator {
     if (/\d{3}/.test(username)) {
       return false;
     }
-    return /^[^\d_-]+[a-z\d_-]+[^\d_-]$/.test(username);
+    return /^[a-z]+[a-z\d_-]+[a-z]$/i.test(username);
   }
 }
